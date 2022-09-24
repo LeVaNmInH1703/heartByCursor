@@ -14,14 +14,15 @@
       span {
         background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png");
         /* background: url("https://i.pinimg.com/564x/2a/16/ac/2a16aca8e0a4ac5cd1ceb0fec44a339c.jpg"); */
+        background: url("https://cdn4.iconfinder.com/data/icons/emojis-flat-pixel-perfect/64/emoji-03-256.png");
         width: 100px;
         height: 100px;
         position: absolute;
         pointer-events: none;
         background-size: cover;
         /* Tự chia tỷ lệ tới kích thước lớn nhất của chiều rộng hoặc chiều cao để phù hợp với vùng nội dung */
-        left: 50%;
-        top: 50%;
+        /* left: 50%;
+        top: 50%; */
         transform: translate(-50%, -50%);
         animation: animate 20s linear;
       }
@@ -45,7 +46,7 @@
     <script>
       const bodyEl = document.querySelector("body");
 
-      bodyEl.addEventListener("mousemove", (event) => {
+      bodyEl.addEventListener("pointermove", (event) => {
         const xPos = event.offsetX;
         const yPos = event.offsetY;
         const spanEl = document.createElement("span");
